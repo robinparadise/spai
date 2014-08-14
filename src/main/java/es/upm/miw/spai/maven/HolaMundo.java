@@ -1,4 +1,4 @@
-package es.jelu.sia.junit;
+package es.upm.miw.spai.maven;
 
 public class HolaMundo {
 
