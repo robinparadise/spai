@@ -7,7 +7,7 @@ public class LoggerDemo {
     static final Logger logger = LogManager.getLogger(LoggerDemo.class.getName());
 
     public static void main(String[] args) {
-        logger.error("Mensaje de log");
+        logger.error("Log de error");
     }
 
 }
