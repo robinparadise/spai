@@ -33,7 +33,6 @@ public class PuntoTest {
 
     @Test
     public void testFase() {
-        Punto pt = new Punto(2, 3);
         assertEquals(0.9828, pt.fase(), 10e-5);
     }
 
