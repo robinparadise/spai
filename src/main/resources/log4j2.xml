@@ -9,11 +9,11 @@
 		</File>
 	</appenders>
 	<loggers>
-		<logger name="es.upm.miw.spai.maven" level="error">
-			<appender-ref ref="File" />
-		</logger>
-		<root level="info">
+		<logger name="es.upm.miw.spai.logger" level="info">
 			<appender-ref ref="Console" />
+		</logger>
+		<root level="error">
+            <appender-ref ref="File" />
 		</root>
 	</loggers>
 </configuration>
