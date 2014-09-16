@@ -9,10 +9,9 @@
 		</File>
 	</appenders>
 	<loggers>
-		<logger name="es.upm.miw.spai.logger" level="info">
-			<appender-ref ref="Console" />
-		</logger>
+		<logger name="es.upm.miw.spai.logger" level="info" />
 		<root level="error">
+            <appender-ref ref="Console" />
             <appender-ref ref="File" />
 		</root>
 	</loggers>
