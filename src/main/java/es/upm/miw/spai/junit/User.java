@@ -19,15 +19,15 @@ public class User {
     }
 
     public int getNumber() {
-        return number;
+        return this.number;
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public String getFamilyName() {
-        return familyName;
+        return this.familyName;
     }
 
     public String fullName() {
