@@ -5,12 +5,12 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
-public class PuntoTest {
-    private Punto pt;
+public class PointTest {
+    private Point pt;
 
     @Before
     public void before() {
-        pt = new Punto(2, 3);
+        pt = new Point(2, 3);
     }
 
     @Test
@@ -21,24 +21,31 @@ public class PuntoTest {
 
     @Test
     public void testPunto() {
-        pt = new Punto();
+        pt = new Point();
         assertEquals(pt.getX(), 0);
         assertEquals(pt.getY(), 0);
     }
 
     @Test
     public void testModulo() {
-        assertEquals(3.6055, pt.modulo(), 10e-5);
+        assertEquals(3.6055, pt.module(), 10e-5);
     }
 
     @Test
     public void testFase() {
-        assertEquals(0.9828, pt.fase(), 10e-5);
+        assertEquals(0.9828, pt.phase(), 10e-5);
+    }
+    
+    @Test
+    public void testTranslate() {
+        this.pt.translateOrigin(new Point(1,1));
+        assertEquals(1, pt.getX());
+        assertEquals(2, pt.getY());
     }
 
     @Test
     public void testToString() {
-        assertEquals("Punto[2,3]", pt.toString());
+        assertEquals("Point[2,3]", pt.toString());
     }
 
 }
