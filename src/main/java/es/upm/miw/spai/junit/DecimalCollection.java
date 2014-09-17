@@ -8,7 +8,7 @@ public class DecimalCollection {
 
     public DecimalCollection() {
         this.collection = new ArrayList<Double>();
-    }
+    } 
 
     public void add(double value) {
         this.collection.add(value);
